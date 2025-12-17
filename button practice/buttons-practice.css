@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+button {
+    border: none;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "first"
+                         "second"
+                         "third";
+    width: 350px;
+}
+
+.first_button,
+.second_button,
+.third_button {
+    height: 40px;
+    width: 100px;
+    margin: 20px 20px;
+}
+
+.first_container,
+.second_container,
+.third_container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first_container {
+    background-color: black;
+    grid-area: first;
+}
+
+.first_button {
+    font-family: "Open Sans";
+    font-weight: bolder;
+    font-size: larger;
+    height: 50px;
+    width: 120px;
+    color: #1DB954;
+    background-color: black;
+    border-radius: 25px;
+    border: 3px solid #1DB954;
+    transition: opacity 0.3s, box-shadow 0.4s, border 0.2s,width 0.2s, font-size 0.2s;
+}
+
+.first_button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    box-shadow: 4px 4px 6px rgba(29, 185, 84, 0.6);
+    width: 126px;
+    font-size: 20px;
+}
+
+.first_button:active {
+    border: 3px solid rgb(26, 170, 76);
+    opacity: 1;
+    box-shadow: none;
+    width: 120px;
+    font-size: larger;
+}
+
+.second_container {
+    grid-area: second;
+    background-color: rgb(250, 250, 250);
+}
+
+.second_button {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 0.5px;
+    background-color: #CC181E;
+    color: white;
+    width: 130px;
+    height: 45px;
+    border-radius: 22.5px;
+    transition: opacity 0.3s, box-shadow 0.4s, background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.second_button:hover {
+    opacity: 0.8;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.second_button:active {
+    opacity: 1;
+    color: rgb(44, 44, 44);
+    border: 2px solid rgb(22, 22, 22);
+    background-color: rgb(243, 243, 243);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.third_container {
+    grid-area: third;
+    background-color: rgb(41, 41, 41);
+}
+
+.third_button {
+    font-family: "Roboto";
+    border: 2px solid white;
+    background-color: transparent;
+    font-weight: bold;
+    color: white;
+    font-size: medium;
+    border-radius: 5px;
+    transition: opacity 0.2s;
+}
+
+.third_button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
